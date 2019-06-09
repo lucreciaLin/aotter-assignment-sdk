@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="/js/sdk.min.js"></script>
+        <script>
+            var type = "{type}";
+            getData(type, 'adGroup');
+                
+            renderAdInSPA(type, 'spaAdGroup');
+                
+            window.onload = function() {
+                onAdLoaded('auto');
+                onAdFailed('auto');
+                onAdImpression('auto');
+            };
+            </script>
+        <title>範例網頁</title>
+    </head>
+    <body>
+        <h1>自動載入廣告：</h1>
+        <div id="adGroup"></div>
+        <h2>在SPA網頁載入廣告：</h2>
+        <div id="spaAdGroup"></div>
+    </body>
+</html>

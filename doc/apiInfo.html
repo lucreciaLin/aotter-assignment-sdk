@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>API說明</title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <div>getData(type, adGroupId)<div>
+                <ul>
+                    <li>用途：取得資料。（用於自動載入時機）。</li>
+                    <li>type：廣告類型，video或banner字串。</li>
+                    <li>adGroupId：指定廣告區域，自動載入為adGroup、在SPA載入為spaAdGroup字串。</li>
+                    <li>沒有回傳值。呼叫成功會呈現內容；呼叫失敗會無法取得內容。</li>
+                </ul>
+            </div>
+            <div>
+                <div>renderAdInSPA(type, adGroupId)</div>
+                <ul>
+                    <li>用途：取得資料。（用於在SPA載入時機）。</li>
+                    <li>type：廣告類型，video或banner字串。</li>
+                    <li>adGroupId：指定廣告區域，自動載入為adGroup、在SPA載入為spaAdGroup字串。</li>
+                    <li>沒有回傳值。呼叫成功會呈現內容；呼叫失敗會無法取得內容。</li>
+                </ul>
+            </div>
+            <div>
+                <div>onAdLoaded(adLoadingMode)</div>
+                <ul>
+                    <li>用途：表示廣告成功載入。</li>
+                    <li>adLoadingMode：指定偵測哪區域廣告載入成功。auto為自動載入區塊、spa為SPA載入區塊字串。</li>
+                    <li>沒有回傳值。呼叫成功會在console呈現訊息；呼叫失敗則不在console呈現訊息。</li>
+                </ul>
+            </div>
+            <div>
+                <div>onAdFailed(adLoadingMode)</div>
+                <ul>
+                    <li>用途：表示廣告失敗載入。</li>
+                    <li>adLoadingMode：指定偵測哪區域廣告載入失敗。auto為自動載入區塊、spa為SPA載入區塊字串。</li>
+                    <li>沒有回傳值。呼叫成功會在console呈現訊息；呼叫失敗則不在console呈現訊息。</li>
+                </ul>
+            </div>
+            <div>
+                <div>onAdImpression(adLoadingMode)</div>
+                <ul>
+                    <li>用途：當廣告大小大於畫面50％且超過1秒時，只呼叫impression_url一次。</li>
+                    <li>adLoadingMode：指定偵測哪區域廣告是否需呼叫impression_url。auto為自動載入區塊、spa為SPA載入區塊字串。</li>
+                    <li>沒有回傳值。呼叫成功會在console呈現成功訊息；呼叫失敗則在console呈現失敗訊息。</li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>

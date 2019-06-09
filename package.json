@@ -1,0 +1,28 @@
+{
+  "name": "sdk",
+  "version": "1.0.0",
+  "description": "- 請設計一個 javascript sdk，讓開發者可以在自己的網站頁面中顯示廣告",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aotter/aotter-assignment-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aotter/aotter-assignment-sdk/issues"
+  },
+  "homepage": "https://github.com/aotter/aotter-assignment-sdk#readme"
+}
